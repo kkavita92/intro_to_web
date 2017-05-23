@@ -16,6 +16,7 @@ end
 post '/named-cat' do
   p params
   @name = params[:name]
+  @occupation = params[:occupation]
   erb(:index)
 end
 

@@ -1,10 +1,15 @@
 <img src='http://bit.ly/1eze8aE' style='border:3px dashed red'>
-<h1>My name is <%= @name %></h1>
+
 
 <% if @name == nil %>
 
   <form action='/named-cat' method='post'>
     <input type='text' name='name'>
-    <input type='submit' value='Ruin his life'>
+
+  <form action='/named-cat' method='post'>
+    <input type='text' name='occupation'>
+    <input type='submit' value='Make him employable'>
+<% else %>
+<h1>My name is <%= @name %>, and I am a <%= @occupation %></h1>
 
 <% end %>
